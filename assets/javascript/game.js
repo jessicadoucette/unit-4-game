@@ -6,11 +6,6 @@ var targetNumber = Math.floor(Math.random() * 101 + 19);
 var userNumber= 0;
 var winCount = 0;
 var lossCount = 0;
-var images = ["./assets/images/gem1.png",
-"./assets/images/gem2.png",
-"./assets//images/gem3.png",
-"./assets/images/gem4.png"
-]
 
 
 //get elements
@@ -61,13 +56,6 @@ function losses() {
 	$('#loss-count').text(lossCount);
 	resetGame(); 
 }
-
-//pick random number
-
-
-//have gems equal random numbers
-
-
 
 // crystal click functions
 
@@ -146,28 +134,4 @@ $('#gem1').on('click', function () {
 	}
  
 }); 
-
-
-
-
-//crystal click function
-// $("#gem1").on("click", function() {
-
-// 	userNumber += 1; 
-// 	$("#current-total").text(userNumber); 
-
-// 	if (userNumber === targetNumber) {
-// 		alert("You win!");
-// 		winCount ++; 
-// 		$("#win-count").text(winCount); 
-// 	}
-
-// 	else if (userNumber >= targetNumber) {
-// 		alert("You lose!"); 
-// 		lossCount ++; 
-// 		$("#loss-count").text(lossCount); 
-// 	}
-
-// }); 
-
 }); 
