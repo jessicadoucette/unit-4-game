@@ -1,64 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Crystals Collector Game</title>
+	<title>Crystal Collector Game</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	crossorigin="anonymous">
- <link rel="stylesheet" href="./assets/css/style.css">
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 	<div class="jumbotron text-center">
-			<h1>Crystals Collector</h1>
+		<h1>CRYSTAL COLLECTOR</h1>
 	</div>
-<div class="container">
-	<div class="row">
-		<div class="col-lg-12">
-			<h2>How to play:</h2>
-			<p>You will be blessed with a random number at the beginning of the game. There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-			<p>You will win the game by reaching the total score, but be careful! If your score goes above the goal, you will lose.</p>
-			<p>Each time the game restarts, you are given a new Goal, and the Mystery Crystals hidden amounts are reset.</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-4">
+				<h2 class="instructions">How to play:</h2>
+				<p>You will be blessed with a random number at the beginning of the game. There are four crystals below. By clicking on
+					a crystal, you will add a specific amount of points to your total score.</p>
+				<p>You will win the game by reaching the total score, but be careful! If your score goes above the goal, you will lose.</p>
+				<p>Each time the game restarts, you are given a new Goal, and the Mystery Crystals hidden amounts are reset.</p>
+			</div>
+
+			<div class="col-xl-8">
+					<h2 class="crystals">Pick a Crystal</h2>
+				<div class="gem-container"> 
+				<span id="gem1" class="gems">
+					<img src="./assets/images/gem1.png" alt="Gem One">
+				</span>
+				<span id="gem2">
+					<img src="./assets/images/gem2.png" alt="Gem Two">
+				</span>
+				<span id="gem3">
+					<img src="./assets//images/gem3.png" alt="Gem Three">
+				</span>
+				<span id="gem4">
+					<img src="./assets/images/gem4.png" alt="Gem Four">
+				</span>
+			</div>
+				<h2 class="heading">
+					Current Score
+				</h2>
+				<div class="box">
+					<h4>Goal:
+						<span id="target-number"></span>
+					</h4>
+					<h4>Current Game:
+						<span id="current-total"></span>
+					</h4>
+				</div>
+
+				<h2 class="heading">
+					Record
+				</h2>
+				<div class="box">
+					<h4>Wins:
+						<span id="win-count"></span>
+					</h4>
+					<h4>Losses:
+						<span id="loss-count"></span>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-lg-6">
-			<h2>
-				Current Score
-			</h2>
-			<p>Goal: 
-				<span id="goal-count"></span>
-			</p>
-			<p>Current Game
-				<span id="current-total"></span>
-			</p>
-		</div>
-		<div class="col-lg-6">
-			<h2>
-				Record
-			</h2>
-			<p>Wins: 
-				<span id="win-count"></span>
-			</p>
-			<p>Losses: 
-				<span id="loss-count"></span>
-			</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-12">
-		<h2>Pick a Crystal</h2>
-	</div>
-		<span id="gem1"><img src="./assets/images/gem1.png" alt="Gem One"></span>
-		<span id="gem2"><img src="./assets/images/gem2.png" alt="Gem Two"></span>
-		<span id="gem3"><img src="./assets//images/gem3.png" alt="Gem Three"></span>
-		<span id="gem4"><img src="./assets/images/gem4.png" alt="Gem Four"></span>
-	</div>
-</div>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./assets/javascript/game.js"></script>
 </body>
+
 </html>
