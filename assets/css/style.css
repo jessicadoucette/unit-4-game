@@ -47,7 +47,7 @@ h1 {
 }
 
 .jumbotron {
-	background-image: url("/Users/jdoucette/Desktop/uubc/homework/04-homework/assets/images/geode.jpg");
+	background-image: url("../images/geode.jpg");
 	background-size: cover;
 	background-position: center;
 }
